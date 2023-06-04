@@ -1,0 +1,555 @@
+/* style.css */
+
+/* Style général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #0E1014;
+  }
+  
+  @font-face {
+    font-family: 'MadeInfinity';
+    src: url('polices/MADEINFINITY\ PERSONALUSE-Light.otf');
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    color: #fff;
+  }
+  
+  h3, h2, h1, p, a, .competence-title, label {
+    margin-top: 0;
+    font-family: 'MadeInfinity', Arial, sans-serif;
+  }
+  h2 {
+    color: #fff;
+  }
+  
+  .separator {
+    border: 1px solid #02C8FF; 
+    margin: 0;
+  }
+  .separator_header {
+    position: absolute; /* Utilisation de position absolue */
+    bottom: 0; /* Positionnement au bas du header */
+    border: 1px solid #02C8FF;
+    margin: 0;
+    width: 100%; /* Largeur à 100% pour remplir le header */
+  }
+  .separator_presentation {
+    position: absolute;
+    top: 920px;
+    border: 1px solid #02C8FF;
+    margin: 0px;
+    width: 100%;
+  }
+  /* Header */
+  header {
+    background-color: #0E1014;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+  }
+  .logo-portfolio{
+    position: relative;
+  }
+  .logo-portfolio>img{
+    position: absolute;
+    left: 25px;
+    top: -35px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px 5px 0px;
+    border-bottom: 1.5px solid #fff;
+  }
+  
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #02C8FF;
+    border-bottom: 1.5px solid #02C8FF;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  /* Ajout du style pour le menu déroulant */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    background-color: #0E1014;
+    width: 300px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    position: relative;
+    color: white;
+    text-align: start;
+    border: 1.5px solid #02C8FF;
+    padding: 15px 18px 15px 55px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #0E1014;
+  }
+  .project-icon {
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border: 1px solid #02C8FF;
+  }
+  .arrondi-test {
+    border: 1.5px solid #02C8FF;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  /* Présentation */
+  .presentation {
+    position: relative;
+  }
+  .blue-text {
+    color: #02C8FF;
+  }
+  .presentation_background {
+    /*
+    background-image: url("images/fond_croco.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    */
+  }
+  .presentation_title {
+    position: absolute;
+    top: 150px;
+    left: 275px;
+    color: #fff;
+    font-size: 35px;
+  }
+  .presentation_pitch{
+    position: absolute;
+    width: 150px;
+    top: 650px;
+    left: 550px;
+    color: #fff;
+    font-size: 25px;
+  }
+  .presentation_text {
+    position: absolute;
+    width: 500px;
+    top: 220px;
+    left: 275px;
+    color: #fff;
+    font-size: 20px;
+    text-align : justify;
+  }
+  
+  .image-download {
+    position: absolute;
+    top: 520px;
+    left: 275px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .image-download img {
+    width: 230px;
+    margin-right: 20px;
+    border: 2px solid #02C8FF;
+  }
+  .download-button {
+    position: absolute;
+    top: 0px;
+    left: 275px;
+    padding: 10px 20px;
+    background-color: #02C8FF;
+    color: #0E1014;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .download-button:hover {
+    color: #fff;
+    background-color: #0c6881;
+  }
+  .video-player {
+    position: absolute;
+    top: 690px;
+    left: 550px;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 2px solid #02C8FF;
+  }
+  video {
+    width: 100%;
+  }
+  
+  /* Projets */
+  #projets {
+    display: block;
+    position: relative;
+    background-image: url("images/background_projets.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .project-container {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 20px 20px;
+  }
+  .project {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    background-color: #eee9da;
+    padding: 15px;
+    border: 2px solid #02C8FF;
+    color: #0E1014;
+    cursor: pointer;
+  }
+  
+  .project:hover {
+    box-shadow: 0 0 30px rgba(2, 200, 255, 0.5);
+    border: 3px solid #02C8FF;
+    margin: 8px;
+  }
+  .project-title {
+    position: absolute;
+    left: 49%;
+    top: 30px;
+  }
+  .project-text {
+    position: absolute;
+    top: 15px;
+    left: 150px;
+  }
+  .project-btn {
+    position: absolute;
+    top: 100px;
+    left: -115px;
+    width: 50px;
+    background-color: #02C8FF;
+    color: #0E1014;
+    text-decoration: none;
+    padding: 3px 15px 5px 15px;
+  }
+  .project-btn:hover {
+    background-color: #0c6881;
+    color: #fff;
+  }
+  
+
+
+/* Compétences */
+#competences {
+  position: relative;
+}
+.container_competence {
+  background-image: url("images/fond_competences.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 20px;
+}
+.container_competence > h2 {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+}
+.competences-container {
+  height: 600px;
+
+  color: #0E1014;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.competence {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  height: 100px;
+  margin: 10px 0;
+  background-color: #eee9da;
+  border: 1px solid #0E1014;
+  border-top: 0px solid #0E1014;
+  border-bottom: 2px solid #02C8FF;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.competence-title > h3 {
+  margin: 2px;
+}
+
+.competence-title {
+  padding: 10px 10px 10px 17px;
+  align-items: center; /* Ajout de cette ligne pour centrer verticalement */
+  display: flex; /* Ajout de cette ligne pour utiliser flexbox */
+  justify-content: center; /* Ajout de cette ligne pour centrer horizontalement */
+}
+
+.competence-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 170px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+  #arrondi1 {
+    border-radius: 10px 0 0 10px;
+  }
+  #arrondi2 {
+    border-radius: 0 10px 10px 0;
+  }
+  .competence:hover .competence-dropdown {
+    display: block;
+  }
+  .competence:hover {
+    box-shadow: 0 0 20px rgba(2, 200, 255, 0.5);
+    border: 2px solid #02C8FF;
+  }
+  
+  /* Job */
+  .job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/job_background.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  .job-li > ul{
+    list-style-type: none;
+    padding: 10px;
+  }
+  .job-li > ul > li {
+    background-color: #eee9da;
+    margin: 6px 0;
+    padding: 5px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border: 2px solid #02C8FF;
+  }
+  .job-li > ul > li > p {
+    margin: 5px 5px 5px 15px;
+  }
+  /* Parcours */
+
+
+  /* Expérience */
+  
+  
+  /* Contact */
+  .contact-section {
+    background-color: #0E1014;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    height: 400px;
+  }
+  .contact-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-container > h2 {
+    position: absolute;
+    left: 48%;
+    top: 20px;
+  }
+
+  .contact-info {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  
+  .left-panel {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 60px 50px 10px 50px;
+    flex: 1;
+  }
+  
+  .logo-container {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .right-panel {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: 60px 50px 10px 0px;
+    flex: 1;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact-top {
+    display: flex;
+    width: 100%;
+  }
+  .contact-name {
+    width: 48%;
+  }
+  .contact-email {
+    width: 48%;
+    margin: 0 0 0 30px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: auto;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+
+  /* Customizations */
+  #home-button {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #home-button a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+  }
+  
+  #home-button a:hover {
+    color: #66c0ff;
+  }
+  
+  nav ul li a:hover {
+    color: #66c0ff;
+  }
+  
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+
+  
+  /*-------------------------------------*/
+  /*----------------Footer---------------*/
+  /*-------------------------------------*/
+  .footer {
+    color: #fff;
+    background-image: url(images/Bande_Portfolio.png);
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-position: center;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-band {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+  }
+  .footer-band > p {
+    margin: 0;
+  }
+  
+  .middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .middle > svg {
+    background-color: #66c0ff;
+    border-radius: 50%;
+    color: #000;
+  }
+  
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+  .svg-animation {
+    animation: rotate 5s linear infinite; /* Ici, 5s représente la durée de rotation, tu peux ajuster cette valeur selon tes besoins */
+  }
+
+
+
+
+

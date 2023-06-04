@@ -1,0 +1,40 @@
+text {
+  font-size:18px; 
+  font-family:'DejaVu Sans';
+  font-weight:normal;
+  font-style:normal;
+  font-stretch:semi-condensed;
+  font-variant:normal;
+  -inkscape-font-specification:'DejaVu Sans Semi-Condensed';
+}
+.border {
+  fill:none; 
+  stroke:#646464; 
+  stroke-width:0.5;
+}
+
+
+#rectlegend {
+  opacity:1;
+  fill:url(#linearGradient4193);
+  fill-opacity:1;
+  stroke:#550000;
+  stroke-width:1;
+  stroke-miterlimit:4;
+  stroke-dasharray:none;
+  stroke-dashoffset:0;
+  stroke-opacity:1;
+}
+
+#legend {
+    display:none;
+  }
+#layer-text {
+  display:none;}
+
+  path {
+    fill: beige;
+  }
+path:hover {
+  fill: aqua;
+}

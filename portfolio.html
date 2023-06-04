@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-portfolio">
+        <img src="images/Logo_Portfolio_SANSFONDS.png" width="100" height="100" alt="Logo Portfolio" class="logo-portfolio">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#presentation">Accueil</a></li>
+        <li><a href="#presentation">Présentation</a></li>
+        <li class="dropdown">
+          <a href="#projets">Projets ></a>
+            <div class="dropdown-content">
+                <a href="#projet1">
+                    <img src="images/Logo_SportKOH.jpg" alt="Icône Projet 1" class="project-icon">
+                    Sport KOH
+                </a>
+                <a href="#projet2">
+                    <img src="images/Logo_Puissance.png" alt="Icône Projet 2" class="project-icon">
+                    Puissance 4
+                </a>
+                <a href="#projet3">
+                    <img src="images/TEAM BUILDING.png" alt="Icône Projet 3" class="project-icon">
+                    Puissance 4 - AI
+                </a>
+                <a href="#projet4">
+                    <img src="images/Logo_Huits_Dames.png" alt="Icône Projet 4" class="project-icon">
+                    Projet Team-Building
+                </a>  
+                <a href="#projet5">
+                    <img src="projet1-icon.png" alt="Icône Projet 5" class="project-icon">
+                    Nom du Projet 1
+                </a>
+                <a href="#projet6" class="arrondi-test">
+                    <img src="projet1-icon.png" alt="Icône Projet 6" class="project-icon">
+                    Nom du Projet 1
+                </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <hr class="separator_header">
+  </header>
+
+  
+
+
+  <section id="presentation">
+    <div class="presentation_background"> 
+      <img src="images/fond_croco.png" alt="fond présentation">
+      <h2 class="presentation_title">Présentation</h2>
+      <p class="presentation_text">Je suis <a class="blue-text">Alexian Vannieuwenhuyze</a>, un étudiant passionné d'informatique et étudiant à Lannion. 
+        Mon objectif est de devenir un professionnel de l'informatique compétent et de contribuer au progrès technologique en créant des solutions innovantes. 
+        Je suis quelqu'un de curieux, je n'hésite pas à aller chercher plus d'information sur un domaine que je ne maîtrise pas, j'aime établir et créer de nouveaux projets que ce soit seule ou en équipe !</p>
+      <h3 class="presentation_pitch">Pitch Oral</h3>
+      <div class="image-download">
+        <img src="images/CV.png" alt="Mon CV !">
+        <a href="fichiers/CV.pdf" class="download-button">Télécharger</a>
+      </div>
+    
+      <div class="video-player">
+        <video controls>
+          <source src="videos/Bonjour.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge la lecture de vidéos.
+        </video>
+      </div>
+    </div>
+    <hr class="separator_presentation">
+  </section>
+
+  
+
+  <section id="projets">
+    <h2 class="project-title">Projets</h2>
+    <div class="project-container">
+      <div class="project" data-id="projet1">
+        <img src="images/Logo_SportKOH.jpg" width="120" height="120" alt="Sport KOH">
+        <div class="project-text">
+            <h3>SPORT KOH</h3>
+            <p>Site vitrine de voyages avec les méthodes utilisées...</p>
+            <a href="" class="project-btn">Détails</a>
+        </div>
+      </div>
+      <div class="project" data-id="projet2">
+        <img src="images/Logo_Puissance.png" width="120" height="120" alt="Puissance 4 - IA">
+        <div class="project-text">
+            <h3>Puissance 4</h3>
+            <p>Puissance 4 jouable sur terminale seul, à deux ou contre une IA !</p>
+            <a href="" class="project-btn">Détails</a>
+        </div>
+      </div>
+      <div class="project" data-id="projet3">
+        <img src="images/Team_Building.png"width="120" height="120" alt="Projet de Team Building">
+        <div class="project-text">
+            <h3>Projet Team-Building</h3>
+            <p>Organisation d'une journée de cohésion au sein d'une entreprise</p>
+            <a href="" class="project-btn">Détails</a>
+        </div>
+      </div>
+      <div class="project" data-id="projet4">
+        <img src="images/Logo_Huits_Dames.png" width="120" height="120" alt="">
+        <div class="project-text">
+            <h3>Les Huits Dames</h3>
+            <p>Solution automatique du problème des huit dames avec interface graphique</p>
+            <a href="" class="project-btn">Détails</a>
+        </div>
+      </div>
+      <div class="project" data-id="projet5">
+        <img src="images/Team_Building.png" width="120" height="120" alt="Projet 5">
+        <div class="project-text">
+            <h3>SPORT KOH</h3>
+            <p>Description du Projet 1</p>
+            <a href="" class="project-btn">Détails</a>
+        </div>
+      </div>
+      <div class="project" data-id="projet6">
+        <img src="images/Team_Building.png" width="120" height="120" alt="Projet 6">
+        <div class="project-text">
+            <h3>SPORT KOH</h3>
+            <p>Description du Projet 1</p>
+            <a href="" class="project-btn">Détails</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator">
+
+  <section id="competences">
+    
+    <div class="container_competence">
+      <h2>Compétences</h2>
+      <div class="competences-container">
+        <div class="competence" id="arrondi1">
+          <div class="competence-title">
+            <h3>Réaliser un développement d'application</h3>
+          </div>
+          <div class="competence-dropdown">
+            <p>Créer, programmer, tester et déployer une application logicielle fonctionnelle. En utilisant
+              des langages, des librairies et des outils pour concevoir les fonctionnalités, 
+              interagir avec les bases de données et assurer la stabilité et la sécurité de l'application.</p>
+          </div>
+        </div>
+        <div class="competence">
+          <div class="competence-title">
+            <h3>Optimiser des applications</h3>
+          </div>
+          <div class="competence-dropdown">
+            <p>Améliorer les performances, l'efficacité et la réactivité des applications
+              existantes. Cela implique l'identification et la résolution des goulots d'étranglement, 
+              l'optimisation du code et l'amélioration de l'expérience utilisateur, 
+              afin d'améliorer la rapidité, la stabilité et l'efficacité.</p>
+          </div>
+        </div>
+        <div class="competence">
+          <div class="competence-title">
+            <h3>Administrer des systèmes informatiques</h3>
+          </div>
+          <div class="competence-dropdown">
+            <p>Gestion et exploitation des systèmes informatiques. Cela comprend la configuration, 
+              la surveillance, la maintenance, la sauvegarde et la résolution 
+              des problèmes liés aux serveurs, réseaux, bases de données 
+              et autres pour assurer leur bon fonctionnement, sécurité ect...</p>
+          </div>
+        </div>
+        <div class="competence">
+          <div class="competence-title">
+            <h3>Gérer des données de l'information</h3>
+          </div>
+          <div class="competence-dropdown">
+            <p>Collecte, le stockage, la manipulation et l'analyse de données pour en extraire des 
+              informations significatives. Cela comprend la structuration des données, 
+              l'utilisation de bases de données, la mise en place de méthodes de recherche et d'analyse, 
+              et la prise de décisions éclairées basées sur les informations obtenues.</p>
+          </div>
+        </div>
+        <div class="competence">
+          <div class="competence-title">
+            <h3>Conduire un projet</h3>
+          </div>
+          <div class="competence-dropdown">
+            <p>Planification, l'organisation, la coordination et le suivi d'un projet du début à la fin. 
+              Cela implique la définition des objectifs, l'allocation des ressources, 
+              la gestion des délais, des coûts et des risques, 
+              ainsi que la coordination des membres de l'équipe pour atteindre les résultats attendus.</p>
+          </div>
+        </div>
+        <div class="competence" id="arrondi2">
+          <div class="competence-title">
+            <h3>Collaborer au sein d'une équipe informatique</h3>
+          </div>
+          <div class="competence-dropdown">
+            <p>Travailler en groupe avec d'autres professionnels pour atteindre des 
+              objectifs communs. Cela comprend la communication efficace, la répartition des tâches, 
+              le partage des connaissances, la résolution de problèmes collectifs et la coordination 
+              des efforts pour assurer le succès des projets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator">
+
+  <section class="job">
+
+    <section id="parcours">
+      <div class="container">
+        <h2>Parcours Scolaire</h2>
+        <p>Un parcours scolaire classique.</p>
+      </div>
+      <div class="job-li">
+        <ul>
+          <li>
+            <img src="images/Brevet.png" alt="" width="100px" height="100px">
+            <p>2018        - Brevet des collèges mention «Très Bien», collège Mendes France, Morlaix</p>
+          </li>
+          <li>
+            <img src="images/Lycee.png" alt="" width="100px" height="100px">
+            <p>2018 / 2022 - Lycée Notre dame du Kresker de Saint-Pol de Léon avec les spécialités NSI, Physique et Mathématiques en Première
+              et NSI et Arts en Terminale. 
+            </p>
+          </li>
+          <li>
+            <img src="images/Bac.png" alt="" width="100px" height="100px">
+            <p>2022        - Bac général mention «Bien» avec 17 en NSI et 14 en Arts</p>
+          </li>
+          <li>
+            <img src="images/IUT.png" alt="" width="100px" height="100px">
+            <p>2022 / 2023 - Première année de BUT Informatique à Lannion</p>
+          </li>
+          <li>
+            <img src="images/IUT.png" alt="" width="100px" height="100px">
+            <p>2023 / 2024 - Première année de BUT Métiers du Multimédia et de l'Internet (MMI) à Lannion</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Expérience</h2>
+        <p>J'ai eu la chance de toucher à pleine de domaines !</p>
+      </div>
+      <div class="job-li">
+        <ul>
+          <li>
+            <img src="images/job_batiment.png" alt="" width="100px" height="100px">
+            <p>Aide dans le batiment</p>
+          </li>
+          <li>
+            <img src="images/job_ramasseur.png" alt="" width="100px" height="100px">
+            <p>Ramasser les échalottes </p>
+          </li>
+          <li>
+            <img src="images/job_plongeur.png" alt="" width="100px" height="100px">
+            <p>Plonge en restaurant</p>
+          </li>
+          <li>
+            <img src="images/job_serveur.png" alt="" width="100px" height="100px">
+            <p>Service en restaurant</p>
+          </li>
+          <li>
+            <img src="images/job_vendeur.png" alt="" width="100px" height="100px">
+            <p>Vendeur en magasin</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </section>
+
+  <hr class="separator">
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Contact</h2>
+
+      <div class="contact-info">
+        
+        <div class="left-panel">
+          <div class="logo-container">
+            <h3>Mes informations</h3>
+            <ul>
+              <li>
+                <p>Alexian Vannieuwenhuyze</p>
+              </li>
+              <li>
+                <p>Numéro : 06 27 70 42 39</p>
+              </li>
+              <li>
+                <p>Email : vnh.alexian@gmail.com</p>
+              </li>
+              <li>
+                <p>Adresse : Roscoff</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+
+        <div class="right-panel">
+          <div class="contact-form">
+            <form>
+              <div class="contact-top">
+                <div class="contact-name">
+                  <label for="name">Nom / Prénom</label>
+                  <input type="text" id="name" name="name">
+                </div>
+                <div class="contact-email">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email">
+                </div>
+              </div>
+    
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Envoyer">
+              </div>
+            </form>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator">
+
+  <section id="footer" class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="middle">
+          <svg alt="Logo Portfolio"  width="150" height="150" data-nimg="1" class="svg-animation">>
+          <image href="images/Logo_Portfolio_SVG.svg" width="150" height="150" />
+          </svg>
+        </div>
+      </div>
+      <hr class="separator">
+      <div class="footer-band">
+        <p>Alexian VANNIEUWENHUZE - 2023</p>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>
